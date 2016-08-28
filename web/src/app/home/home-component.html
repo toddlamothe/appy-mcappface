@@ -1,0 +1,22 @@
+<style>
+.centerScreen2 {
+  height: 100px;
+    width: 100px;
+    position: absolute;
+
+    /*Centering Method 2*/
+    margin: -50px 0 0 -50px;
+    left: 50%;
+    top: 40%;
+}
+</style>
+<logbutton logEntryType="FFD"></logbutton>
+<logbutton logEntryType="FMP"></logbutton>
+<logbutton logEntryType="L+S+G"></logbutton>
+<logbutton logEntryType="GSD"></logbutton>
+<logbutton logEntryType="1+1=3"></logbutton>
+<logbutton logEntryType="BAM"></logbutton>
+<summary #summaryComponent (refresh-summary)="spinner($event)"></summary>
+<div *ngIf="showSpinner">
+  <md-progress-circle class="centerScreen2" mode="indeterminate"></md-progress-circle>
+</div>

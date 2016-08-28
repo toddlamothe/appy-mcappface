@@ -1,0 +1,7 @@
+Get event stats.
+Execute from anywhere.
+curl http://localhost:8080/eventstats
+
+Post a new event defined in event.json
+Execute from the data directory:
+curl -X POST -d @event.json http://localhost:8080/logevent --header "Content-Type:application/json"

@@ -1,0 +1,15 @@
+<md-card>
+  <md-card-title>{{logEntryType}}!</md-card-title>
+  <md-card-content>
+    <div>
+      Nice work! Would you like to say anything about where you heard this awesome catchphrase?
+    </div>
+    <div>
+      <md-input style="width: 40%" [(ngModel)]="comments"></md-input>
+    </div>
+  </md-card-content>
+  <md-card-actions>
+    <button md-raised-button color="default" (click)=LogEvent()>Submit</button>
+    <button md-raised-button color="default" (click)=Cancel()>Cancel</button>
+  </md-card-actions>
+</md-card>
